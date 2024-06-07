@@ -39,16 +39,18 @@ def main():
             ''')
 
     print("\n")
-    print("o----------------------------------------------------------o")
-    print("| Dear ...                                                 |")
+    print("o--------------------------------------------------------------------------------o")
+    print("{:.80s} {}".format("| Dear..."+" "*120,"|"))
+    #print("| Dear ...                                                                                    |")
     print("\n\n\n")
     name = input("What is your name? ")
     name = name.capitalize()
     print("\n")
-    print("o----------------------------------------------------------o")
-    print(f"| Dear {name},                                                |")
-    print("| We are pleased to announce the next DSFP session will    |")
-    print("| will be held at ...                                      |")
+    print("o--------------------------------------------------------------------------------o")
+    print("{:.80s} {}".format(f"| Dear {name},"+" "*120,"|"))
+    print("{:.80s} {}".format(f"|           "+" "*150,"|"))
+    print("{:.80s} {}".format(f"| We are pleased to announce the next DSFP session..."+" "*120,"|"))
+    print("{:.80s} {}".format(f"| will be held at ..."+" "*120,"|"))
     print("\n\n\n")
     loc_key = ""
     while (loc_key not in locations.keys()):
@@ -56,26 +58,28 @@ def main():
         loc_key = loc_key.upper()
     location = locations[loc_key.upper()]
     print("\n")
-    print("o----------------------------------------------------------o")
-    print(f"| Dear {name},                                                |")
-    print("| We are pleased to announce the next DSFP session will    |")
-    print(f"| be held at {location}.                                  |")
+    print("o--------------------------------------------------------------------------------o")
+    print("{:.80s} {}".format(f"| Dear {name},"+" "*120,"|"))
+    print("{:.80s} {}".format(f"|           "+" "*150,"|"))
+    print("{:.80s} {}".format(f"| We are pleased to announce the next DSFP session"+" "*120,"|"))
+    print("{:.80s} {}".format(f"| will be held at {location}."+" "*120,"|"))
     print("\n\n\n")
     start_loc = ""
     while ((start_loc != "domestic") and (start_loc != "international")):
         start_loc = input("Make sure you book your... [domestic/international] ")
         start_loc = start_loc.lower()
     print("\n")
-    print("o----------------------------------------------------------o")
-    print(f"| Dear {name},                                                |")
-    print("| We are pleased to announce the next DSFP session will    |")
-    print(f"| will be held at {location}.                            |")
-    print(f"| Make sure you book your {start_loc} travel quickly so you |")
-    print("| get a big stonking per diem. We'll see you soon! |")
-    print("|                                                      |")
-    print("| Love you!                                            |")
-    print("| Bryan <3                                           |")
-    print("o----------------------------------------------------------o")
+    print("o--------------------------------------------------------------------------------o")
+    print("{:.80s} {}".format(f"| Dear {name},"+" "*120,"|"))
+    print("{:.80s} {}".format(f"|           "+" "*150,"|"))
+    print("{:.80s} {}".format(f"| We are pleased to announce the next DSFP session"+" "*120,"|"))
+    print("{:.80s} {}".format(f"| will be held at {location}."+" "*120,"|"))
+    print("{:.80s} {}".format(f"| Make sure you book your {start_loc} travel quickly so you"+" "*120,"|"))
+    print("{:.80s} {}".format(f"| get a big stonking per diem. We'll see you soon!"+" "*120,"|"))
+    print("{:.80s} {}".format(f"|           "+" "*150,"|"))
+    print("{:.80s} {}".format(f"| Love you! "+" "*150,"|"))
+    print("{:.80s} {}".format(f"| Bryan <3 "+" "*150,"|"))
+    print("o--------------------------------------------------------------------------------o")
     print("\n\n\n")
     print(f"You're going to {location}! Yippee!!")
 
@@ -92,6 +96,9 @@ def main():
 
     print("%-------------------------")
     print("TRAVEL DAY")
+    for x in range(10):
+        dotmove(x)    
+
     print("\n\n")
 
     print("""
@@ -162,10 +169,10 @@ def main():
 
     print("""
           
-                  .
-                ('
-                '|
-                |'
+              .
+               ('
+               '|
+              |'
             [::]
             [::]   _......_
             [::].-'      _.-`.
@@ -173,7 +180,7 @@ def main():
             [/ /\   |  \        `-..
             / / |   `-.'      .-.   `-.
             /  `-'            (   `.    `.
-            |           /\      `-._/      \
+            |           /\      `-._/      \\
             '    .'\   /  `.           _.-'|
             /    /  /   \_.-'        _.':;:/
         .'     \_/             _.-':;_.-'
@@ -207,7 +214,7 @@ def main():
     print('''
           
              .::""-,                      .::""-.
-            /::     \                    /::     \
+            /::     \                    /::     \\
             |::     |   _..--""""--.._   |::     |
             '\:.__ /  .'              '.  \:.__ /
             ||____|.'                  '.||____|
@@ -223,7 +230,7 @@ def main():
             ||: ;.' .`'        _. '`'-.         '.   . ''-._
             ||:. :   '.     .'          '.  . ' ' '.`       '._
             ||:. :    '. .'     .::""-: .''.        ' .   . ' ' :::""-.
-            ||:. '     ..' .    /::     \    '.        . '.    /::     \
+            ||:. '     ..' .    /::     \    '.        . '.    /::     \\
             ||:  :  . .'      '.|::     |    _.:---""---.._'   |::     |
             ||.  ;  .:          '\:.__ /   .'              '.   \:.__ /
             ||:  ;  : '.       . ||____|_.'                  '._||____|
