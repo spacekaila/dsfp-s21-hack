@@ -62,7 +62,6 @@ def main():
     print("o---------------------------------------------o")
     print("\n\n\n")
     print(f"You're going to {location}! Yippee!!")
-    print("\n\n\n")
 
     if(start_loc == 'domestic'):
         travel_status = 1.0
@@ -71,7 +70,9 @@ def main():
         travel_status = 1.10
         flight_time = 8
     
-    you = Player(name=name, travel_status = travel_status)
+    you = Player(name=name, travel_status=travel_status)
+
+    print("\n\n\n")
 
     print("%-------------------------")
     print("TRAVEL DAY")
@@ -94,7 +95,6 @@ def main():
     time.sleep(2)
     print("Phew, through security. Time to check how your flight is doing...")
 
-    
     #for x in range(10):
     #    dotmove(x)    
     num = rng.uniform()
@@ -118,18 +118,26 @@ def main():
 
     print("You've landed and made it to the hotel. Probably a good idea to get checked in and head to bed --the session starts at 9am!")
     choice = 0
+    print()
     while((choice != 1) and (choice != 2)):
-        choice = int(input("CHOICE [1,2]: 1. nah, let's stay up and explore the city! (- Focus, + Fun)\n              2. I can feel my eyes closing already... (+ Focus)\n"))
+        choice = int(input("CHOICE [1,2]: 1. Nah, let's stay up and explore the city! (- Focus, + Fun)\n              2. I can feel my eyes closing already... (+ Focus)\n"))
     if(choice == 1):
         you.focus -= 3
         you.fun += 3
+        print()
         print("This place is so cool! Wow, is it midnight already?")
     else:
         you.focus += 3
+        print()
         print("It's been a long day. This bed looks super comfy!")
     
     print("\n\n")
+
     print("END OF TRAVEL DAY")
+    print()
+    you.check_status()
+
+
 
 
 
