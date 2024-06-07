@@ -22,17 +22,33 @@ def main():
 
     print("\n")
     print("You have received an email from esteemed Nobel Laureate in waiting, Bryan Scott! Let's see what he has to say...")
+
+    print(f'''
+
+                    .----.
+        .---------. | == |
+        |.-"""""-.| |----|
+        ||       || | == |
+        ||       || |----|
+        |'-.....-'| |::::|
+        `"")---(""` |___.|
+        /:::::::::::\" _  "
+        /:::=======:::\`\`\ 
+        `"""""""""""""`  '-'
+            
+            ''')
+
     print("\n")
-    print("o---------------------------------------------o")
-    print("| Dear ...                                    |")
+    print("o----------------------------------------------------------o")
+    print("| Dear ...                                                 |")
     print("\n\n\n")
     name = input("What is your name? ")
     name = name.capitalize()
     print("\n")
-    print("o---------------------------------------------o")
-    print(f"| Dear {name},                                   |")
-    print("| We are pleased to announce the next DSFP session   |")
-    print("| will be held at ...                         |")
+    print("o----------------------------------------------------------o")
+    print(f"| Dear {name},                                                |")
+    print("| We are pleased to announce the next DSFP session will    |")
+    print("| will be held at ...                                      |")
     print("\n\n\n")
     loc_key = ""
     while (loc_key not in locations.keys()):
@@ -40,26 +56,26 @@ def main():
         loc_key = loc_key.upper()
     location = locations[loc_key.upper()]
     print("\n")
-    print("o---------------------------------------------o")
-    print(f"| Dear {name},                                   |")
-    print("| We are pleased to announce the next DSFP session   |")
-    print(f"| will be held at {location}.                    |")
+    print("o----------------------------------------------------------o")
+    print(f"| Dear {name},                                                |")
+    print("| We are pleased to announce the next DSFP session will    |")
+    print(f"| be held at {location}.                                  |")
     print("\n\n\n")
     start_loc = ""
     while ((start_loc != "domestic") and (start_loc != "international")):
         start_loc = input("Make sure you book your... [domestic/international] ")
         start_loc = start_loc.lower()
     print("\n")
-    print("o---------------------------------------------o")
-    print(f"| Dear {name},                                   |")
-    print("| We are pleased to announce the next DSFP session  |")
-    print(f"| will be held at {location}.                    |")
+    print("o----------------------------------------------------------o")
+    print(f"| Dear {name},                                                |")
+    print("| We are pleased to announce the next DSFP session will    |")
+    print(f"| will be held at {location}.                            |")
     print(f"| Make sure you book your {start_loc} travel quickly so you |")
     print("| get a big stonking per diem. We'll see you soon! |")
     print("|                                                      |")
     print("| Love you!                                            |")
     print("| Bryan <3                                           |")
-    print("o---------------------------------------------o")
+    print("o----------------------------------------------------------o")
     print("\n\n\n")
     print(f"You're going to {location}! Yippee!!")
 
@@ -76,7 +92,19 @@ def main():
 
     print("%-------------------------")
     print("TRAVEL DAY")
-    print("\n\n\n")
+    print("\n\n")
+
+    print("""
+                    ____
+               .---[[__]]----.
+              ;-------------.|       ____
+              |             ||   .--[[__]]---.
+              |             ||  ;-----------.|
+              |             ||  |           ||
+              |_____________|/  |           ||
+                                |___________|/
+
+          """)
 
     print("You've arrived at your local airport and get to security.")
     for x in range(10):
@@ -110,6 +138,20 @@ def main():
     
     print("\n")
     print(f"Finally! It's time to fly. Sit back and relax, it's a {flight_time} hour flight.")    
+
+    print("""   
+                    __  _
+                    \ `/ |
+                    \__`!
+                    / ,' `-.__________________
+                    '-'\_____                LI`-.
+                    <____()-=O=O=O=O=O=[]====--)
+                        `.___ ,-----,_______...-'
+                            /    .'
+                            /   .'
+                            /  .'         
+                            `-'""")    
+
     for x in range(10):
         dotmove(x)
 
@@ -117,6 +159,37 @@ def main():
     print('\n\n')
 
     print("You've landed and made it to the hotel. Probably a good idea to get checked in and head to bed --the session starts at 9am!")
+
+    print("""
+          
+                  .
+                ('
+                '|
+                |'
+            [::]
+            [::]   _......_
+            [::].-'      _.-`.
+            [:.'    .-. '-._.-`.
+            [/ /\   |  \        `-..
+            / / |   `-.'      .-.   `-.
+            /  `-'            (   `.    `.
+            |           /\      `-._/      \
+            '    .'\   /  `.           _.-'|
+            /    /  /   \_.-'        _.':;:/
+        .'     \_/             _.-':;_.-'
+        /   .-.             _.-' \;.-'
+        /   (   \       _..-'     |
+        \    `._/  _..-'    .--.  |
+        `-.....-'/  _ _  .'    '.|
+                | |_|_| |      | \  (o)
+            (o)  | |_|_| |      | | (\'/)
+            (\'/)/  ''''' |     o|  \;:;
+            :;  |        |      |  |/)
+             ;: `-.._    /__..--'\.' ;:
+                :;  `--' :;   :;
+
+          """)
+
     choice = 0
     print()
     while((choice != 1) and (choice != 2)):
@@ -130,6 +203,41 @@ def main():
         you.focus += 3
         print()
         print("It's been a long day. This bed looks super comfy!")
+
+    print('''
+          
+             .::""-,                      .::""-.
+            /::     \                    /::     \
+            |::     |   _..--""""--.._   |::     |
+            '\:.__ /  .'              '.  \:.__ /
+            ||____|.'                  '.||____|
+            ||:.  |                       |:.  |
+            ||:.  |                       |:.  |
+            ||:.  |                       |:.  |
+            ||:.  |  _..---"````````'---. |:.  |
+            ||:.  | `                     \:.  |
+            ||:.  |: :                .--._.-""-;
+            ||:.  |: : _.---``````---/    '.   _.`.
+            ||:.  | .-'  _,'```'-...'   _ .-'.'    '-.
+            ||:. .-'   .'        '. . '      '.      `'.
+            ||: ;.' .`'        _. '`'-.         '.   . ''-._
+            ||:. :   '.     .'          '.  . ' ' '.`       '._
+            ||:. :    '. .'     .::""-: .''.        ' .   . ' ' :::""-.
+            ||:. '     ..' .    /::     \    '.        . '.    /::     \
+            ||:  :  . .'      '.|::     |    _.:---""---.._'   |::     |
+            ||.  ;  .:          '\:.__ /   .'              '.   \:.__ /
+            ||:  ;  : '.       . ||____|_.'                  '._||____|
+            ||:  ;__:   '.   .'  ||:.  |                        ||:.  |
+            ||:___| \     '. :   ||:.  |                        ||:.  |
+            [[____]  '.     '.-._||:.  |                        ||:.  |
+                       '.    :   ||:.  |                        ||:.  |
+                         '.  :   ||:.  |                        ||:.  |
+                           '-:   ||:.  |                        ||:.  |
+                              '._||:.  |________________________||:.  |
+                                 ||:___|'-.-'-.-'-.-'-.-'-.-'-.-||:___|
+                                 [[____]                        [[____]
+
+          ''')
     
     print("\n\n")
 
