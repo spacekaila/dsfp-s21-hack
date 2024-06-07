@@ -31,9 +31,9 @@ class Player(object):
         max_focus = 20
         max_knowledge = 25
 
-        self.fun = np.max(0, self.fun) 
-        self.focus = np.max(0, self.focus)
-        self.knowledge = np.max(0, self.knowledge)
+        self.fun = np.max([0, self.fun]) 
+        self.focus = np.max([0, self.focus])
+        self.knowledge = np.max([0, self.knowledge])
 
         (tqdm(range(max_fun), desc="Fun:      ",
               bar_format='{desc:<12}{percentage:3.0f}%|{bar:10}|{n_fmt}/{total_fmt}{bar:-10b}')).update(self.fun)
