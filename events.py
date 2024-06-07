@@ -23,5 +23,4 @@ class RandomEvent:
         print(self)
 
     def __repr__(self):
-        return "{} You get {} Fun, {} Focus, {} Knowledge".format(self.prompt, self.mod_fun, self.mod_foc, self.mod_know)
-
+        return "Random Event! \n {} You get {} Fun, {} Focus, {} Knowledge".format(self.prompt, self.mod_fun, self.mod_foc, self.mod_know)

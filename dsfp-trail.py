@@ -2,6 +2,7 @@ from player import Player
 import time
 from events import RandomEvent
 import numpy.random as rng
+import numpy as np
 
 
 def dotmove(n):

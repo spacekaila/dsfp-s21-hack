@@ -1,4 +1,5 @@
 from tqdm import tqdm
+import numpy as np
 
 class Player(object):
     def __init__(self, name=None, travel_status=None):
@@ -30,7 +31,7 @@ class Player(object):
         max_focus = 20
         max_knowledge = 25
 
-        self.fun = np.max([0, self.fun])
+        self.fun = np.max([0, self.fun]) 
         self.focus = np.max([0, self.focus])
         self.knowledge = np.max([0, self.knowledge])
 
