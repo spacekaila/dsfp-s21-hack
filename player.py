@@ -1,9 +1,9 @@
 from tqdm import tqdm
 
-class Player:
-    def __init__(self, name=None, travel_type=None):
+class Player(object):
+    def __init__(self, name=None, travel_status=None):
         self.name = name
-        self.travel_type = travel_type
+        self.travel_status = travel_status
         self.focus = 0
         self.fun = 0
         self.knowledge = 0
