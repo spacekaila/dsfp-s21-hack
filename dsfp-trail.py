@@ -11,15 +11,16 @@ def dotmove(n):
     print(loading + "   ", end='\r')
     time.sleep(0.3)
 
+locations =    {"PA":"Drexel University, in Philadelphia, PA",
+                "CA":"University of California, Berkeley, in Berkeley, CA",
+                "TX":"Texas A&M, in College Station, TX",
+                "WA":"University of Washington, in Seattle, WA",
+                "IL":"Northwestern University, in Evanston, IL",
+                "MA":"Harvard, in Cambridge, MA"}
+
+
 
 def main():
-
-    locations = {"PA":"Drexel University, in Philadelphia, PA",
-                 "CA":"University of California, Berkeley, in Berkeley, CA",
-                 "TX":"Texas A&M, in College Station, TX",
-                 "WA":"University of Washington, in Seattle, WA",
-                 "IL":"Northwestern University, in Evanston, IL",
-                 "MA":"Harvard, in Cambridge, MA"}
 
     print("\n")
     print("You have received an email from esteemed Nobel Laureate in waiting, Bryan Scott! Let's see what he has to say...")
@@ -42,7 +43,6 @@ def main():
     print("\n")
     print("o--------------------------------------------------------------------------------o")
     print("{:.80s} {}".format("| Dear..."+" "*120,"|"))
-    #print("| Dear ...                                                                                    |")
     print("\n\n\n")
     name = input("What is your name? ")
     name = name.capitalize()
@@ -123,23 +123,19 @@ def main():
         print("You sped through security no problem!")
     else:
         print("You must have been packing drugs! You've been stopped for a random check.")
-        you.focus -= 5
+        you.mod_focus(5)
 
-    #for x in range(10):
-    #    dotmove(x)
     print("\n")
     time.sleep(2)
     print("Phew, through security. Time to check how your flight is doing...")
 
-    #for x in range(10):
-    #    dotmove(x)    
     num = rng.uniform()
     print()
     if(num <= 0.9):
         print("Everything's on time! Let's head to the lounge to relax...")
     else:
         print("Oh no! There's a delay! Time to talk to the gate agent...")
-        you.focus -= 5
+        you.mod_focus(5)
 
     for x in range(5):
         dotmove(x)    
@@ -200,15 +196,15 @@ def main():
 
     choice = 0
     print()
-    while((choice != 1) and (choice != 2)):
+    while ((choice != 1) and (choice != 2)):
         choice = int(input("CHOICE [1,2]: 1. Nah, let's stay up and explore the city! (- Focus, + Fun)\n              2. I can feel my eyes closing already... (+ Focus)\n"))
-    if(choice == 1):
-        you.focus -= 3
-        you.fun += 3
+    if (choice == 1):
+        you.mod_focus(-3)
+        you.mod_fun(3)
         print()
         print("This place is so cool! Wow, is it midnight already?")
     else:
-        you.focus += 3
+        you.mod_focus(3)
         print()
         print("It's been a long day. This bed looks super comfy!")
 
@@ -255,11 +251,11 @@ def main():
 
     print("\n\n\n")
 
-    counter = 1    
+    counter = 1
 
     for x in range(10):
         dotmove(x)
-        
+
     print(f'Welcome to Day {counter}!!')
     print()
     print("Bryan: 'Now that we've finished our dicussion about the Code of Conduct,")
@@ -269,7 +265,6 @@ def main():
     for x in range(3):
         dotmove(x)
 
-
     for x in range(15):
         dotmove(x)
     print("\n\n")
@@ -277,7 +272,7 @@ def main():
 
     for x in range(10):
         dotmove(x)
-    
+
     print()
     RandomEvent(you)
     print("\n\n")
@@ -286,7 +281,7 @@ def main():
     print(f"END OF DAY {counter}")
     print()
     you.check_status()
-    counter +=1
+    counter += 1
     you.mod_knowledge(5)
 
 
