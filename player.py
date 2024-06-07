@@ -1,4 +1,5 @@
 from tqdm import tqdm
+import numpy as np
 
 class Player(object):
     def __init__(self, name=None, travel_status=None):
