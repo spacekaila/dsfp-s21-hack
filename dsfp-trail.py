@@ -11,12 +11,13 @@ def dotmove(n):
     print(loading + "   ", end='\r')
     time.sleep(0.3)
 
-locations =    {"PA":"Drexel University, in Philadelphia, PA",
-                "CA":"University of California, Berkeley, in Berkeley, CA",
-                "TX":"Texas A&M, in College Station, TX",
-                "WA":"University of Washington, in Seattle, WA",
-                "IL":"Northwestern University, in Evanston, IL",
-                "MA":"Harvard, in Cambridge, MA"}
+
+locations =    {"PA": "Drexel University, in Philadelphia, PA",
+                "CA": "University of California, Berkeley, in Berkeley, CA",
+                "TX": "Texas A&M, in College Station, TX",
+                "WA": "University of Washington, in Seattle, WA",
+                "IL": "Northwestern University, in Evanston, IL",
+                "MA": "Harvard, in Cambridge, MA"}
 
 
 
@@ -141,7 +142,7 @@ def main():
         dotmove(x)    
     
     print("\n")
-    print(f"Finally! It's time to fly. Sit back and relax, it's a {flight_time} hour flight.")    
+    print(f"Finally! It's time to fly. Sit back and relax, it's a {flight_time} hour flight.")
 
     print("""   
                     __  _
@@ -154,7 +155,7 @@ def main():
                             /    .'
                             /   .'
                             /  .'         
-                            `-'""")    
+                            `-'""")
 
     for x in range(10):
         dotmove(x)
