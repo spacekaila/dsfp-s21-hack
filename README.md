@@ -1,6 +1,7 @@
 # dsfp-s21-hack
 dsfp session 21 hack
 
+````
 TTTTTTTTTTTTTTTTTTTTTTThhhhhhh                                      DDDDDDDDDDDDD           SSSSSSSSSSSSSSS FFFFFFFFFFFFFFFFFFFFFFPPPPPPPPPPPPPPPPP        TTTTTTTTTTTTTTTTTTTTTTT                                      iiii  lllllll 
 T:::::::::::::::::::::Th:::::h                                      D::::::::::::DDD      SS:::::::::::::::SF::::::::::::::::::::FP::::::::::::::::P       T:::::::::::::::::::::T                                     i::::i l:::::l 
 T:::::::::::::::::::::Th:::::h                                      D:::::::::::::::DD   S:::::SSSSSS::::::SF::::::::::::::::::::FP::::::PPPPPP:::::P      T:::::::::::::::::::::T                                      iiii  l:::::l 
@@ -17,9 +18,10 @@ TTTTTT  T:::::T  TTTTTT h::::h hhhhh           eeeeeeeeeeee           D:::::D   
       T:::::::::T       h:::::h     h:::::h e::::::::eeeeeeee       D:::::::::::::::DD   S::::::SSSSSS:::::SF::::::::FF           P::::::::P                     T:::::::::T       r:::::r          a:::::aaaa::::::a i::::::il::::::l
       T:::::::::T       h:::::h     h:::::h  ee:::::::::::::e       D::::::::::::DDD     S:::::::::::::::SS F::::::::FF           P::::::::P                     T:::::::::T       r:::::r           a::::::::::aa:::ai::::::il::::::l
       TTTTTTTTTTT       hhhhhhh     hhhhhhh    eeeeeeeeeeeeee       DDDDDDDDDDDDD         SSSSSSSSSSSSSSS   FFFFFFFFFFF           PPPPPPPPPP                     TTTTTTTTTTT       rrrrrrr            aaaaaaaaaa  aaaaiiiiiiiillllllll
+````
 
 Welcome to the DSFP Trail! This program was started as a hack session project for the DSFP Session 21 on Databases and Software Engineering at UIUC in June 2024.
-We hope you enjoy this emmersive (and very realistic) experience of being an LSST-DA Data Science Fellow! 
+We hope you enjoy this immersive (and very realistic) experience of being an LSST-DA Data Science Fellow! 
 
 Original Developers: Jordan Ealy, Kaila Nathaniel, Joseph Murtagh, Aren Beck, and Nicole Firestone. 
 We thank the LSST-DA Data Science Fellowship Program, which is funded by LSST-DA, the Brinson Foundation, and the Moore Foundation; our participation in the program has benefited this work. ;) 
