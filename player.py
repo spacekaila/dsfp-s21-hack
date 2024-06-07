@@ -4,7 +4,7 @@ class Player(object):
     def __init__(self, name=None, travel_status=None):
         self.name = name
         self.travel_status = travel_status
-        self.focus = 0
+        self.focus = 10
         self.fun = 0
         self.knowledge = 0
 
