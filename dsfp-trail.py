@@ -114,6 +114,23 @@ def main():
         dotmove(x)
 
 
+    print('\n\n')
+
+    print("You've landed and made it to the hotel. Probably a good idea to get checked in and head to bed --the session starts at 9am!")
+    choice = 0
+    while((choice != 1) and (choice != 2)):
+        choice = int(input("CHOICE [1,2]: 1. nah, let's stay up and explore the city! (- Focus, + Fun)\n              2. I can feel my eyes closing already... (+ Focus)\n"))
+    if(choice == 1):
+        you.focus -= 3
+        you.fun += 3
+        print("This place is so cool! Wow, is it midnight already?")
+    else:
+        you.focus += 3
+        print("It's been a long day. This bed looks super comfy!")
+    
+    print("\n\n")
+    print("END OF TRAVEL DAY")
+
 
 
 
