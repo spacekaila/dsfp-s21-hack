@@ -18,7 +18,7 @@ TTTTTT  T:::::T  TTTTTT h::::h hhhhh           eeeeeeeeeeee           D:::::D   
       T:::::::::T       h:::::h     h:::::h  ee:::::::::::::e       D::::::::::::DDD     S:::::::::::::::SS F::::::::FF           P::::::::P                     T:::::::::T       r:::::r           a::::::::::aa:::ai::::::il::::::l
       TTTTTTTTTTT       hhhhhhh     hhhhhhh    eeeeeeeeeeeeee       DDDDDDDDDDDDD         SSSSSSSSSSSSSSS   FFFFFFFFFFF           PPPPPPPPPP                     TTTTTTTTTTT       rrrrrrr            aaaaaaaaaa  aaaaiiiiiiiillllllll
 
-Welcome to the DSFP Trail! This project was started as a hack session project for the DSFP Session 21 on Databases and Software Engineering at UIUC in June 2024.
+Welcome to the DSFP Trail! This program was started as a hack session project for the DSFP Session 21 on Databases and Software Engineering at UIUC in June 2024.
 We hope you enjoy this emmersive (and very realistic) experience of being a LSST-DA Data Science Fellow! 
 
 Original Developers: Jordan Ealy, Kaila Nathaniel, Joseph Murtagh, Aren Beck, and Nicole Firestone 
