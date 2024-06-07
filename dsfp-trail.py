@@ -1,5 +1,15 @@
-#import Player
+from player import Player
+import time
 #import Events
+
+import numpy.random as rng
+
+
+def dotmove(n):
+    dot = "."*n
+    loading = (f"{dot}")
+    print(loading + "   ", end = '\r')
+    time.sleep(0.3)
 
 def main():
 
@@ -52,6 +62,57 @@ def main():
     print("o---------------------------------------------o")
     print("\n\n\n")
     print(f"You're going to {location}! Yippee!!")
+    print("\n\n\n")
+
+    if(start_loc == 'domestic'):
+        travel_status = 1.0
+        flight_time = 4
+    else:
+        travel_status = 1.10
+        flight_time = 8
+    
+    you = Player(name=name, travel_status = travel_status)
+
+    print("%-------------------------")
+    print("TRAVEL DAY")
+    print("\n\n\n")
+
+    print("You've arrived at your local airport and get to security.")
+    for x in range(10):
+        dotmove(x)    
+    print()
+    num = rng.uniform()
+    if(you.travel_status * num <= 0.8):
+        print("You sped through security no problem!")
+    else:
+        print("You must have been packing drugs! You've been stopped for a random check.")
+        you.focus -= 5
+
+    #for x in range(10):
+    #    dotmove(x)
+    print("\n")
+    time.sleep(2)
+    print("Phew, through security. Time to check how your flight is doing...")
+
+    
+    #for x in range(10):
+    #    dotmove(x)    
+    num = rng.uniform()
+    print()
+    if(num <= 0.9):
+        print("Everything's on time! Let's head to the lounge to relax...")
+    else:
+        print("Oh no! There's a delay! Time to talk to the gate agent...")
+        you.focus -= 5
+
+    for x in range(5):
+        dotmove(x)    
+    
+    print("\n")
+    print(f"Finally! It's time to fly. Sit back and relax, it's a {flight_time} hour flight.")    
+    for x in range(10):
+        dotmove(x)
+
 
 
 
