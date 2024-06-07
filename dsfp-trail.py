@@ -1,21 +1,21 @@
 from player import Player
 import time
-#import Events
-
+from events import RandomEvent
 import numpy.random as rng
 
 
 def dotmove(n):
     dot = "."*n
     loading = (f"{dot}")
-    print(loading + "   ", end = '\r')
+    print(loading + "   ", end='\r')
     time.sleep(0.3)
+
 
 def main():
 
     locations = {"PA":"Drexel University, in Philadelphia, PA",
                  "CA":"University of California, Berkeley, in Berkeley, CA",
-                 "TX":"Texas A&M at College Station, TX",
+                 "TX":"Texas A&M, in College Station, TX",
                  "WA":"University of Washington, in Seattle, WA",
                  "IL":"Northwestern University, in Evanston, IL",
                  "MA":"Harvard, in Cambridge, MA"}
@@ -251,6 +251,42 @@ def main():
     print("END OF TRAVEL DAY")
     print()
     you.check_status()
+
+    print("\n\n\n")
+
+    counter = 1    
+
+    for x in range(10):
+        dotmove(x)
+        
+    print(f'Welcome to Day {counter}!!')
+    print()
+    print("Bryan: 'Now that we've finished our dicussion about the Code of Conduct,")
+    for x in range(10):
+        dotmove(x)
+    print("        let's get into today's session. Pull the GitHub...'")
+    for x in range(3):
+        dotmove(x)
+
+
+    for x in range(15):
+        dotmove(x)
+    print("\n\n")
+    print("Bryan: 'Let's start our first break, be back in 30 minutes!")
+
+    for x in range(10):
+        dotmove(x)
+    
+    print()
+    RandomEvent(you)
+    print("\n\n")
+    for x in range(10):
+        dotmove(x)
+    print(f"END OF DAY {counter}")
+    print()
+    you.check_status()
+    counter +=1
+    you.mod_knowledge(5)
 
 
 
