@@ -24,3 +24,5 @@ We hope you enjoy this immersive (and very realistic) experience of being an LSS
 
 Original Developers: Jordan Ealy, Kaila Nathaniel, Joseph Murtagh, Aren Beck, and Nicole Firestone. 
 We thank the LSST-DA Data Science Fellowship Program, which is funded by LSST-DA, the Brinson Foundation, and the Moore Foundation; our participation in the program has benefited this work. ;) 
+
+Future Anticipated Functionality: Better day progression, morning/evening events, the Wednesday Break, group dinner.
