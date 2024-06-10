@@ -9,6 +9,7 @@ class Player(object):
         self.fun = 0
         self.knowledge = 0
 
+        # check for vips
         if self.name.lower() == "bryan":
             print("Hi Bryan! You're bang up to the elephant!")
         elif self.name.lower() == "adam":
@@ -17,6 +18,8 @@ class Player(object):
             print("HAPPY BIRTHDAY WEEK SABINA!!!!1!!")
 
     # methods
+
+    # stats modifiers
     def mod_focus(self, num):
         self.focus += num
 
