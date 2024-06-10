@@ -252,11 +252,20 @@ def main():
 
     print("\n\n\n")
 
+    # initialize dsfp day tracker
     counter = 1
 
     for x in range(10):
         dotmove(x)
 
+    ###################################
+    # typical day structure
+    # Morn -> lunch -> afternoon
+    # -> dinner -> end of day updates
+    # To do: Better day progression, 
+    # add special events like Wednesday Break
+    # and the group dinner.
+    ###################################
     print(f'Welcome to Day {counter}!!')
     print()
     print("Bryan: 'Now that we've finished our dicussion about the Code of Conduct,")
